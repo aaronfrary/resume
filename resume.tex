@@ -1,0 +1,180 @@
+%----------------------------------------------------------------------------------------
+% {{{   PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[centered, margin, 10pt]{res} % Use the res.cls style.
+% The font size can be changed to 11pt or 12pt here.  Title can be center or line, sections can be margin or overlapped
+
+\usepackage{enumitem}
+\setlist{nosep, leftmargin=*} % For compact lists
+
+\usepackage{newcent} % new century schoolbook postscript font
+%\usepackage{times}   % times new roman postscript font
+%\usepackage{helvet}  % helvetica postscript font
+
+\setlength{\textwidth}{5.0in} % Text width of the document
+% Set to 5.75in when using overlapped sections
+
+% size options are \tiny \scriptsize \footnotesize \small \normalsize \large \Large \LARGE \huge \Huge
+% font options are \bf (bold), \it (italic), \textmd (non-bold), \textup (non-italic)
+
+% Two types of section header
+\newcommand\mainsectionfont{\normalsize\bf\textup}
+\newcommand\subsectionfont{\small\textmd\textup}
+
+\renewcommand\namefont{\huge} % Font for name in title
+\renewcommand\sectionfont{\mainsectionfont} % Font for section headers
+
+\renewcommand\employerfont{\bf} % Fonts for positions
+\renewcommand\titlefont{\it}
+\renewcommand\locationfont{\small}
+% dates use subsectionfont
+
+\begin{format} % Layout for positions
+\employer{l}\location{r}\\
+\title{l}\\
+\body\\
+\end{format}
+\renewcommand\dates{\section} % Use date as section header
+
+\raggedright % Helps with minimizing hyphenation
+
+% Kludge to format itemize in position environment
+\newenvironment{rlist}
+    {\begin{minipage}[t]{\linewidth}\begin{itemize}\raggedright}
+    {\end{itemize}\end{minipage}}
+\newenvironment{positionlist}
+    {\begin{position}\begin{rlist}}
+    {\end{rlist}\end{position}}
+
+\begin{document}
+
+%-}}}------------------------------------------------------------------------------------
+% {{{   NAME AND ADDRESS
+%----------------------------------------------------------------------------------------
+
+\name{Aaron Frary}
+\address{(address redacted)}
+\phone{(phone number redacted)}
+\email{af@aaronfrary.com}
+
+%----------------------------------------------------------------------------------------
+
+\begin{resume}
+
+%-}}}------------------------------------------------------------------------------------
+% {{{   EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{EDUCATION}
+
+{\bf Harvard College}, Cambridge, MA
+\\
+A.B. in Computer Science with Mathematics secondary, May 2015.
+
+%-}}}------------------------------------------------------------------------------------
+% {{{   COURSEWORK SECTION
+%----------------------------------------------------------------------------------------
+
+\section{SELECTED COURSEWORK}
+
+\begin{ncolumn}{2}
+  \begin{rlist}
+    \item Data Structures \& Algorithms
+    \item Operating Systems
+    \item Compilers
+    \item Systems Biology
+  \end{rlist}
+  &
+  \begin{rlist}
+    \item Large-Scale Symbolic Systems (MIT)
+    \item Machine Learning
+    \item Computer Vision
+    \item Evolutionary Dynamics
+  \end{rlist}
+\end{ncolumn}
+
+%-}}}------------------------------------------------------------------------------------
+% {{{   PROFESSIONAL EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\renewcommand\sectionfont{\subsectionfont} % Using date for section header
+
+\section{{\mainsectionfont EXPERIENCE} \\ June 2015 - present }
+\employer{MeedMobile (formerly Fiksu)}
+\title{Software Engineer}
+\location{Northampton, MA}
+\begin{position}
+  \phantom{x}
+\end{position}
+
+\employer{Harvard University}
+\title{Teaching Fellow -- CS 51: Abstraction and Design in Computation}
+\location{Cambridge, MA}
+\dates{Jan - May, '14 \& '15}
+\begin{positionlist}
+  \item Taught weekly review sections and discussions of supplementary
+    materials.
+  \item Supervised final projects, helping students with algorithm selection,
+    interface design, and overall implementation plan.
+  \item Collaborated with professors to update section materials and problem
+    sets to make use of Jane Street's Core.std library for OCaml.
+\end{positionlist}
+
+\employer{Riparian Pharmaceuticals}
+\title{Bioinformatics Intern}
+\location{Cambridge, MA}
+\dates{June - Sept, 2014}
+\begin{positionlist}
+  \item Used machine learning to predict new drug lead candidates from prior
+    screening results.
+  \item Designed experiments to validate predictions and help identify drug
+    targets.
+\end{positionlist}
+
+\employer{Infosys Labs}
+\title{Cloud Dependability Intern}
+\location{Bangalore, Karnataka, India}
+\dates{June - Aug, 2013}
+\begin{positionlist}
+  \item Created tool to analyze webserver logs and study patterns of user
+    behavior in response to failures, helping identify the most pressing
+    problems.
+  \item Named Best Intern under Technology category for April - October 2013/14.
+\end{positionlist}
+
+\employer{Harvard Office for the Arts}
+\title{Tech Assistant}
+\location{Cambridge, MA}
+\dates{July '12 - May '14}
+\begin{positionlist}
+  \item Maintained Inventory of electrics, lumber and power tools.
+  \item Instructed students in proper use of theatrical lighting equipment.
+\end{positionlist}
+
+\renewcommand\sectionfont{\mainsectionfont} % back to normal sections
+
+%-}}}------------------------------------------------------------------------------------
+% {{{   SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{ADDITIONAL SKILLS}
+\begin{rlist}
+  \item Experience with Ruby, Python, Java, Clojure, OCaml, Coq Proof Assistant,
+    MATLAB, Mathematica, R, \LaTeX
+  \item Knowledge of Unix, Mac, and Windows operating systems
+\end{rlist}
+
+%-}}}------------------------------------------------------------------------------------
+% {{{   INTERESTS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{INTERESTS}
+Strategy games, programming languages, Shakespeare, arts and education,
+open source, science fiction, green technology
+
+%----------------------------------------------------------------------------------------
+
+\end{resume}
+\end{document}
+% }}}
