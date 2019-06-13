@@ -2,7 +2,7 @@
 % {{{   PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
 %----------------------------------------------------------------------------------------
 
-\documentclass[centered, margin, 10pt]{res} % Use the res.cls style.
+\documentclass[centered, margin, 11pt]{res} % Use the res.cls style.
 % The font size can be changed to 11pt or 12pt here.  Title can be center or line, sections can be margin or overlapped
 
 \usepackage{enumitem}
@@ -23,7 +23,7 @@
 % font options are \bf (bold), \it (italic), \textmd (non-bold), \textup (non-italic)
 
 % Two types of section header
-\newcommand\mainsectionfont{\normalsize\bf\textup}
+\newcommand\mainsectionfont{\fontsize{10.5pt}{14pt}\selectfont\bf\textup}
 \newcommand\subsectionfont{\small\textmd\textup}
 
 \renewcommand\namefont{\Huge} % Font for name in title
@@ -58,9 +58,8 @@
 %----------------------------------------------------------------------------------------
 
 \name{Aaron Frary}
-\address{af@aaronfrary.com}
-%\phone{(phone number redacted)}
-%\email{af@aaronfrary.com}
+\phone{} % redacted
+\email{af@aaronfrary.com}
 
 %----------------------------------------------------------------------------------------
 
@@ -87,12 +86,10 @@ A.B. in Computer Science with Mathematics secondary, May 2015.
     \item Data Structures \& Algorithms
     \item Operating Systems
     \item Compilers
-    \item Systems Biology
   \end{rlist}
   &
   \begin{rlist}
-    \item Large-Scale Symbolic Systems (MIT)
-    \item Group Theory
+    \item Symbolic Systems (MIT)
     \item Machine Learning
     \item Computer Vision
   \end{rlist}
@@ -105,15 +102,14 @@ A.B. in Computer Science with Mathematics secondary, May 2015.
 \renewcommand\sectionfont{\subsectionfont} % Using date for section header
 \setlist{itemsep=1pt, leftmargin=*} % Less compact lists for positions
 
-\section{{\mainsectionfont EXPERIENCE} \\ April 2017 - present }
+\section{{\mainsectionfont EXPERIENCE} \\ April 2017 - \\ Present }
 \employer{Valt Inc.}
 \title{Software Engineer, founding employee}
 \location{North Adams, MA}
 \begin{positionlist}
-  \item Lead a two-person team porting the Valt Password Manager app
-    to Android.
-  \item Designed and built a cross-platform backend library in C++ for Android, iOS,
-    and future ports of the Valt app.
+  \item Lead two-person team porting Valt Password Manager to Android.
+  \item Designed and built a cross-platform backend library in C++ for
+    Android, iOS, and future ports of the Valt app.
   \item Supervised interns building prototype Valt browser extension.
   \item Implemented front-end designs for Valt iOS and Mac apps.
   \item Implemented serverless API's for cloud storage and synchronization
@@ -125,8 +121,7 @@ A.B. in Computer Science with Mathematics secondary, May 2015.
 \location{Northampton, MA}
 \dates{June 2015 - \\ March 2017}
 \begin{positionlist}
-  \item Implemented rewarded video for Meed's flagship incent app, adding a new
-    source of revenue for the company.
+  \item Implemented rewarded video for Meed's flagship incent app.
   \item Wrote tech specifications for major features including managed user
     accounts for Meed's authentication system.
   \item Responded to operational emergencies as part of on-call rotation.
@@ -135,14 +130,13 @@ A.B. in Computer Science with Mathematics secondary, May 2015.
 \employer{Harvard University}
 \title{Teaching Fellow -- CS 51: Abstraction and Design in Computation}
 \location{Cambridge, MA}
-\dates{Jan - May, '14 \& '15}
+\dates{Jan - May, \\ 2014 \& 2015}
 \begin{positionlist}
-  \item Taught weekly review sections and discussions of supplementary
-    materials.
+  \item Taught weekly review sections and supplementary lessons.
   \item Supervised final projects, helping students with algorithm selection,
     interface design, and overall implementation plan.
-  \item Collaborated with professors to update section materials and problem
-    sets to make use of Jane Street's Core.std library for OCaml.
+  % \item Collaborated with professors to update section materials and problem
+  %   sets to make use of Jane Street's Core.std library for OCaml.
 \end{positionlist}
 
 % \employer{Riparian Pharmaceuticals}
@@ -161,10 +155,9 @@ A.B. in Computer Science with Mathematics secondary, May 2015.
 \location{Bangalore, Karnataka, India}
 \dates{June - Aug, 2013}
 \begin{positionlist}
-  \item Created tool to analyze webserver logs and study patterns of user
-    behavior in response to failures, helping identify the most pressing
-    problems.
-  \item Named Best Intern under Technology category for April - October 2013/14.
+  \item Created tool to analyze webserver logs and identify patterns of user
+    behavior in response to failures.
+  \item Named Best Intern under Technology category for 2013.
 \end{positionlist}
 
 % \employer{Harvard Office for the Arts}
@@ -185,9 +178,8 @@ A.B. in Computer Science with Mathematics secondary, May 2015.
 
 \section{ADDITIONAL SKILLS}
 \begin{rlist}
-  \item Programming with Ruby, Python, C++, Swift, OCaml, JavaScript + React
-  \item Experience with PostgreSQL, Redis, AWS, Git
-  \item Familarity with Unix tools and operating systems
+  \item Programming with Ruby, Python, C++, Swift, JavaScript + React
+  \item Experience with PostgreSQL, Redis, AWS, Git, GNU/Linux
 \end{rlist}
 
 %-}}}------------------------------------------------------------------------------------
@@ -195,7 +187,7 @@ A.B. in Computer Science with Mathematics secondary, May 2015.
 %----------------------------------------------------------------------------------------
 
 \section{INTERESTS}
-Shakespeare, programming languages, science fiction, free (libre) software
+Shakespeare, compilers, science fiction, free (libre) software
 
 %----------------------------------------------------------------------------------------
 
