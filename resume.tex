@@ -12,6 +12,10 @@
 %\usepackage{times}   % times new roman postscript font
 %\usepackage{helvet}  % helvetica postscript font
 
+% Slightly more generous top and bottom margins.
+\addtolength{\topmargin}{-0.2in}
+\addtolength{\textheight}{0.3in}
+
 \setlength{\textwidth}{5.0in} % Text width of the document
 % Set to 5.75in when using overlapped sections
 
@@ -99,7 +103,7 @@ A.B. in Computer Science with Mathematics secondary, May 2015.
 %----------------------------------------------------------------------------------------
 
 \renewcommand\sectionfont{\subsectionfont} % Using date for section header
-
+\setlist{itemsep=1pt, leftmargin=*} % Less compact lists for positions
 
 \section{{\mainsectionfont EXPERIENCE} \\ April 2017 - present }
 \employer{Valt Inc.}
@@ -173,6 +177,7 @@ A.B. in Computer Science with Mathematics secondary, May 2015.
 % \end{positionlist}
 
 \renewcommand\sectionfont{\mainsectionfont} % back to normal sections
+\setlist{nosep, leftmargin=*} % Back to compact lists
 
 %-}}}------------------------------------------------------------------------------------
 % {{{   SKILLS SECTION
